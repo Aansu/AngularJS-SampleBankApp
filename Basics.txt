@@ -1,0 +1,68 @@
+node -v
+npm -v
+ts-->js transpiling
+npm i -g@angular/cli@latest
+ng --version
+
+create workfolder and gitbash
+ng new demo --routing
+y
+n--routing(more than 1 web pages then yes)
+css
+
+if jasmine error present then open demo then git bash then type
+npm -i --force
+
+
+open demo,then gitbash
+ng serve --open
+localhost:4200
+
+(npm install npm -g)
+
+to add new component in the app ,gitbash demo
+ng g c test
+ng generate component componentName 
+
+
+
+
+components-->view in angular
+[root component,root module]-->app
+
+Angular Form
+1)template driven AF
+2)model driven AF
+
+
+Template driven AF
+BANK APP
+ng serve --open
+ng g c login
+
+login component.html-->paste our login code
+add bootStrap to index.html
+styles to style.css or seperate style login.css
+
+view html to component
+component to view html..i.e..,
+data binding
+Methods
+1.one way binding(https://github.com/Aansu/AngularJS-SampleBankApp.git)
+i)Component to view
+--->String interpolation/interpolation
+    syntax:{{Expression}}  --must be a string expression
+--->Property Binding
+    syntax:[Binding-target]="binding source" --class property bind to html value
+
+
+ii)view to component
+--->Event binding
+    syntax:(event)="function call" eg:click
+--->Event binding using argument as $event
+    syntax:(event)="function ($event)"
+
+
+
+2.Two way binding
+
