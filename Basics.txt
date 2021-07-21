@@ -61,8 +61,21 @@ ii)view to component
     syntax:(event)="function call" eg:click
 --->Event binding using argument as $event
     syntax:(event)="function ($event)"
-
+--->Event binding using template referencing variable
+    syntax:#template-reference-variable
 
 
 2.Two way binding
+ngModule--FormsModule
+Syntax:[{ngModel}]="variable-name"
+
+Path setting: app-routing-module.ts
+syntax:const-->[
+{
+path:'dashboard',component:DashboardComponent
+}
+]
+
+app-component.html
+<router-outlet></router-outlet>
 

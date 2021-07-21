@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  aim="Welcome";
-  acNumber="Account number please";
-  acno="";
+ // aim="Welcome";
+  //acNumber="Account number please"; [value]="acNumber"
+  acno="Account number please";
   pswd="";
 
 users:any={
@@ -23,17 +23,35 @@ users:any={
 
   ngOnInit(): void {
   }
+  //binding property--(change)="accNumber($event)",(change)="pswdChange($event)"
+  // accNumber(event:any){
+  //   this.acno=event.target.value
+  // }
+  // pswdChange(event:any){
+  //   this.pswd=event.target.value
+  // }
 
-  accNumber(event:any){
-    this.acno=event.target.value
-  }
-  pswdChange(event:any){
-    this.pswd=event.target.value
-  }
 
-  login(){
-    var acno=this.acno;
-    var pswd=this.pswd;
+
+  // login(){  //one way binding
+  //   var acno=this.acno;
+  //   var pswd=this.pswd;
+
+  //   let ac_details=this.users;
+  //   if(acno in ac_details){
+  //     if (pswd==ac_details[acno]["password"]){
+  //       alert("login success");
+  //     }else{
+  //       alert("incorrect password");
+  //     }
+  //   }else{
+  //     alert("no account found");
+  //   }
+  // }
+
+  login(a:any,p:any){
+    var acno=a.value;
+    var pswd=p.value;
 
     let ac_details=this.users;
     if(acno in ac_details){
